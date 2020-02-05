@@ -1,0 +1,6 @@
+<h1><%= @post.title %></h1>
+<p><%= @post.content %></p>
+<p><%= @post.likes %></p>
+
+<%= button_to "Like Post", like_post_path, method: "patch" %>
+<%= link_to "Back to Author Page", blogger_path(@post.blogger) %>
